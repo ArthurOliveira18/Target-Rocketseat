@@ -1,0 +1,9 @@
+import { View } from "react-native";
+
+export default function InProgress(){
+    return(
+        <View>
+            
+        </View>
+    )
+}

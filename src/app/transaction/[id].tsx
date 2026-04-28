@@ -8,7 +8,7 @@ export default function Transaction(){
     return(
         <View style = {{flex: 1 , justifyContent: "center"}}>
             <Text>ID:{params.id} </Text>
-            <Button title="Nova meta" onPress={() => router.navigate("/")} />
+            <Button title="Nova meta" onPress={() => router.back()} />
         </View>
     )
 }

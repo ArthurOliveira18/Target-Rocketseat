@@ -22,8 +22,6 @@ export default function Index() {
                 onPress={() => router.navigate({
                     pathname: "/transaction/[id]",
                     params: { id: "190" }
-
-                    // commit 
                 })}
             />
         </View>
