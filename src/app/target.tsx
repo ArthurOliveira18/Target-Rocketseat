@@ -9,7 +9,7 @@ export default function Target(){
         style ={{ 
             flex : 1, 
             justifyContent: "center",
-            backgroundColor: colors.blue[800]
+           
             }}>
            <Text style= {{color: colors.white}}>Target</Text>
 

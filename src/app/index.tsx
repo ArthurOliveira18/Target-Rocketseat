@@ -1,6 +1,7 @@
 import { View, Text, Button } from "react-native";
 import { colors } from "@/theme/colors";
 import { router } from "expo-router";
+import { fontFamily } from "@/theme/fontFamily";
 
 
 
@@ -8,22 +9,23 @@ export default function Index() {
     return (
         <View
             style={{
-                backgroundColor: colors.blue[800],
+                
                 justifyContent: "center",
                 flex: 1
             }}
 
         >
-            <Text style={{ color: colors.white }}>Tela do index</Text>
+            <Text style={{ fontFamily: fontFamily.bold  }}>Tela do index</Text>
 
 
             <Button title="Nova meta" onPress={() => router.navigate("/target")} />
+
             <Button title="Transação"
-                onPress={() => router.navigate({
-                    pathname: "/transaction/[id]",
-                    params: { id: "190" }
+                onPress={() => router.navigate({pathname: "/transaction/[id]", params: { id: " 7" }
                 })}
             />
+
+            <Button title="Progresso" onPress={() => router.navigate({pathname: "/in-progress/[id]", params: {id: 8}})} />
         </View>
     )
 }

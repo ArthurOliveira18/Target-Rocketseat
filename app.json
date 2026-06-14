@@ -1,7 +1,6 @@
 {
   "expo": {
-    
-    "scheme": "your-app-scheme",
+    "scheme": "target",
     "experiments": {
       "typedRoutes": true
     },
@@ -20,6 +19,9 @@
       "bundleIdentifier": "com.arthurEO.target",
       "icon": "./assets/adaptive-icon.png"
     },
-    "plugins": ["expo-router"]
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
   }
 }
